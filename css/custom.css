@@ -1,0 +1,153 @@
+:root {
+  font-size: 16px;
+}
+nav {
+  display: none;
+}
+main.container {
+  padding-left: 16vw;
+}
+nav ul:last-of-type li {
+  padding-right: 5rem;
+}
+li.cart svg {
+  height: 32px;
+  width: 32px;
+}
+p.large {
+  font-size: 175%;
+  margin: 0 0 2rem 0;
+}
+section.grid {
+}
+span.rollback {
+  position: relative;
+  top: -8px;
+  display: flex;
+  align-items: center;
+  background-color: #DE1C24;
+  padding: 2px 12px 1px 4px;
+  color: #FFF !important;
+  font-size: 90% !important;
+  font-weight: 800;
+  border-radius: 4px;
+}
+span.rollback svg {
+  width: 18px;
+  height: 18px;
+}
+span.rollback.hidden {
+  visibility: hidden;
+}
+span.rollback.overall {
+  background-color: #002D58;
+}
+
+section.grid {
+  gap: 2vw;
+}
+section.grid div {
+  position: relative;
+}
+section.grid.relative div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+section.grid.relative div img {
+  object-position: top;
+  height: 480px;
+  object-fit: contain;
+}
+section.grid.fixed div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section.grid.fixed img {
+  max-height: 380px;
+  margin: 0 auto;
+}
+section.grid.fixed div hgroup {
+}
+
+section.grid div hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section button {
+  margin: 1rem 0;
+  border-radius: 200px;
+  display: flex;
+  padding-right: .6rem !important;
+  padding-left: .2rem !important;
+  font-weight: 600;
+  --pico-form-element-spacing-vertical: 0.5rem;
+  --pico-form-element-spacing-horizontal: 0.5rem;
+  /* defaults
+  --pico-form-element-spacing-vertical: 0.75rem;
+  --pico-form-element-spacing-horizontal: 1rem;
+  */
+}
+.price {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.price sup {
+  font-size: 75%;
+  top: -.4rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.unit {
+  font-size: 85%;
+  font-weight: 400;
+  color: #777;
+}
+span.starbox {
+  margin: .35rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: .22rem;
+}
+span.starbox svg {
+  width: 18px;
+  height: 18px;
+  color: #cc851a;
+  fill: #ffc220;
+}
+span.status {
+  display: flex;
+  background-color: #114ab6;
+  padding: 2px 4px;
+  color: #FFF !important;
+  font-size: 80% !important;
+  font-weight: 500;
+  margin-bottom: .25rem;
+  border-radius: 3px;
+}
+span.shipping {
+  color: #0053e2 !important;
+}
+span.shipping, span.pickup {
+  font-size: 80% !important;
+}
+
+section.autogrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+section.autogrid > div {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: flex-start;
+}
+section.autogrid img {
+  max-height: 415px;
+  /* align-self: center; */
+}
